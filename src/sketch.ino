@@ -9,7 +9,7 @@ SMSGSM sms;
 word nextMillis = 0;
 word nextCallCheck = 0;
 
-// Off-limits pins: 2, 3, 8, 9
+// Off-limits pins: 2, 3, 8, 10
 
 #define INPUT_PHASE 4
 #define INPUT_THERMAL 5
@@ -22,11 +22,11 @@ char pinStates[INPUT_LENGTH] = {0};
 
 #define TimeLap(t1) (int)((word)millis()-(word)t1)
 
-// If you have a push-button setup, where you push a button for on and another
+// If you have a push-button setup, where you push a button for on and another...
 // for off, set these two pins to the two relays (on/off). If you have a single
 // switch that stays on/off when you call, set these two pins to the same
 // number (i.e. the pin number of the single relay that will stay on or off).
-#define PIN_ON 11
+#define PIN_ON 9
 #define PIN_OFF 10
 #define PIN_ON_INTERVAL 500
 
